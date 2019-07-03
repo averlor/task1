@@ -13,14 +13,15 @@ body{
 #countdown{
 	color: white;
 	font: 400 1.5rem Arial, sans-serif;
-	width: 40vw;
+	width: 300px;
 	text-align: center;
+	padding-top: 20vh;
 	margin: auto auto;
 }
 
 #form-order{
     width: 300px;
-    margin: 25vh auto;
+    margin: 10vh auto;
     border-radius: 8px;
     position: relative;
 
