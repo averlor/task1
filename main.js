@@ -19,7 +19,6 @@ var sec = localStorage.getItem('time') || 86400000;
 
 function timer() {
     sec--;
-    console.log(Math.floor(sec/3600));
     localStorage.setItem('time', sec);
     setTimeout('timer()', 1000);
     countdown.innerHTML = Math.floor(sec / 1000 / 3600) + ' : ' + Math.floor(sec % 3600000 / 1000 / 60) + ' : ' + Math.floor(sec % 3600000 % 60000 / 1000) + ' : ' + Math.floor(sec % 1000);
