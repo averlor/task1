@@ -20,7 +20,7 @@ var sec = localStorage.getItem('time') || 86400000;
 function timer() {
     sec--;
     localStorage.setItem('time', sec);
-    setTimeout('timer()', 1000);
+    setTimeout('timer()', 1);
     countdown.innerHTML = Math.floor(sec / 1000 / 3600) + ' : ' + Math.floor(sec % 3600000 / 1000 / 60) + ' : ' + Math.floor(sec % 3600000 % 60000 / 1000) + ' : ' + Math.floor(sec % 1000);
     if (sec === 0) {
         countdown.innerHTML = 'Время вышло'
